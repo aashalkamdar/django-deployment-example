@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+  {% extends 'basic_app/base.html' %}
+{% block body_block %}
+    <h1>welcome to index</h1>
+<h2>this is index.html page with template inheritance</h2>
+
+{% load my_extras %}
+{{ text|lol:'hello' }}
+<h1>{{ number|add:'345' }}</h1>
+{% endblock %}
